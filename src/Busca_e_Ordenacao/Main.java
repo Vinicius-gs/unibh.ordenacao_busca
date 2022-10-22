@@ -11,11 +11,11 @@ public class Main {
 		Scanner entrada = new Scanner(System.in);
 		
         
-        int arr[] = new int[10];
+        int arr[] = new int[500];
         
         // Gerando numeros aleatorios no arry
 		for (int i = 0; i < arr.length; i++) {
-			arr[i] = random.nextInt(1000);
+			arr[i] = random.nextInt(10000);
 		}
         
 		System.out.print("Qual número deseja saber a posição: ");
@@ -40,7 +40,7 @@ public class Main {
         System.out.println("============ Tempo de execução Busca Sequencial ==================");
         System.out.println((fimSequencial - comecoSequencial) / 1000d);
         
-        
+        // Imprimir array
         ob.printArray(arr);
     }
 
